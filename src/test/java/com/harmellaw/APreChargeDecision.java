@@ -3,8 +3,6 @@ package com.harmellaw;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.fail;
-
 public class APreChargeDecision {
 
     @BeforeEach
@@ -13,11 +11,11 @@ public class APreChargeDecision {
 
     @Test
     public void shouldRecordAlternativeCharge_AdviceAgainstSuspects() {
-        fail();
+        // Make assertions
     }
     
     @Test
     public void shoudRecordDisclosureManagementReminders() {
-        fail();
+        // Make assertions
     }
 }

@@ -15,7 +15,7 @@ public class APoliceInvestigation {
     @Test
     public void shouldHaveAtLLeastOneSuspect() {
         Suspect aSuspect = new Suspect();
-        Investigation anInvestigation = new Investigation(aSuspect);
+        PoliceInvestigation anInvestigation = new PoliceInvestigation(aSuspect);
         assertFalse(anInvestigation.suspects.isEmpty());
     }
     
@@ -23,7 +23,7 @@ public class APoliceInvestigation {
     public void cantHaveZeroSuspects() {
 
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            Investigation anInvestigation = new Investigation(null);
+            PoliceInvestigation anInvestigation = new PoliceInvestigation(null);
         });
 
         assertTrue(exception.getMessage().contains("You must provide a suspect"));

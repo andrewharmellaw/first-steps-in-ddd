@@ -4,8 +4,6 @@ package com.harmellaw;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.fail;
-
 public class ACriminalCase {
 
     @BeforeEach
@@ -14,11 +12,11 @@ public class ACriminalCase {
 
     @Test
     public void shouldDoSomething() {
-        fail();
+        // Make assertions
     }
     
     @Test
     public void shoudDoSomething_whenSomethingElseHappens() {
-        fail();
+        // Make assertions
     }
 }
