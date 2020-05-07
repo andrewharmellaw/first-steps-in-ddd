@@ -10,7 +10,8 @@ You should be able to fork and then clone this repo to get an almost empty gradl
 
 ## What you get
 A directory `first-steps-in-ddd` containing this README.md, a gradle build file with JUnit 5 dependencies
-declared, standard `src` and `test` directory structure, and an example unit test `AThing.java`.  
+declared, standard `src` and `test` directory structure, and an example unit test 
+`APoliceInvestigation.java` and associated starter class `PoliceInvestigation.java`.  
 
 ## Getting up and running
 The training relies entirely on your writing unit tests (ideally you use test-driven development)
@@ -22,4 +23,4 @@ button, or ideally a single keyboard shortcut.
 
 Additionally, it can be handy to check your build on the command line. Open a terminal and change to the
 top level project directory. Then run the command `gradle build`.  You ought to see your test compile and
-the two (empty) tests run successfully. 
+the three (two of which are empty) tests run successfully. 
