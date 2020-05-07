@@ -11,6 +11,13 @@ public class APoliceInvestigation {
     }
 
     @Test
+    public void shouldHaveAtLLeastOneSuspect() {
+        Suspect aSuspect = new Suspect();
+        Investigation anInvestigation = new Investigation(aSuspect);
+        assertFalse(anInvestigation.suspects.isEmpty());
+    }
+    
+    @Test
     public void shouldBeSomething() {
         // Make assertions
     }
