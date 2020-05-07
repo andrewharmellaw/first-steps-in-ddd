@@ -1,4 +1,4 @@
-package com.harmellaw.prosecution;
+package com.harmellaw;
 
 public class PreChargeDecision {
 }
