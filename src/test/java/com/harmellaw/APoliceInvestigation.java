@@ -3,6 +3,8 @@ package com.harmellaw;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 public class APoliceInvestigation {
 
     @BeforeEach
@@ -15,6 +17,16 @@ public class APoliceInvestigation {
         Suspect aSuspect = new Suspect();
         Investigation anInvestigation = new Investigation(aSuspect);
         assertFalse(anInvestigation.suspects.isEmpty());
+    }
+    
+    @Test
+    public void cantHaveZeroSuspects() {
+
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            Investigation anInvestigation = new Investigation(null);
+        });
+
+        assertTrue(exception.getMessage().contains("You must provide a suspect"));
     }
     
     @Test
