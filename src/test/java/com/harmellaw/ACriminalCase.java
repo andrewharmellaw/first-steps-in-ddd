@@ -16,7 +16,7 @@ public class ACriminalCase {
     }
     
     @Test
-    public void shoudDoSomething_whenSomethingElseHappens() {
+    public void shouldDoSomething_whenSomethingElseHappens() {
         // Make assertions
     }
 }
