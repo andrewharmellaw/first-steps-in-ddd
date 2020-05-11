@@ -7,25 +7,40 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class APoliceInvestigation {
 
+    PNCId aPncId;
+    Suspect aSuspect;
+    PoliceInvestigation anInvestigation;
+
     @BeforeEach
     public void setup() {
-        // Setup to run before each test
+        aPncId = new PNCId("1234-ESDT");
+        aSuspect = new Suspect();
+        anInvestigation = new PoliceInvestigation(aPncId, aSuspect);
+    }
+
+    @Test
+    public void mustHaveAPoliceNationalComputerId() {
+        assertNotNull(anInvestigation.pncId);
+    }
+
+    @Test
+    public void cantHaveAnEmptyPoliceNationalComputerId() {
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            anInvestigation = new PoliceInvestigation(null, aSuspect);
+        });
+        assertTrue(exception.getMessage().contains("You must provide a PNC Id"));
     }
 
     @Test
     public void shouldHaveAtLLeastOneSuspect() {
-        Suspect aSuspect = new Suspect();
-        PoliceInvestigation anInvestigation = new PoliceInvestigation(aSuspect);
         assertFalse(anInvestigation.suspects.isEmpty());
     }
     
     @Test
     public void cantHaveZeroSuspects() {
-
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            PoliceInvestigation anInvestigation = new PoliceInvestigation(null);
+            anInvestigation = new PoliceInvestigation(aPncId, null);
         });
-
         assertTrue(exception.getMessage().contains("You must provide a suspect"));
     }
     

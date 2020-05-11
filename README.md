@@ -23,5 +23,5 @@ top-level project directory). Then check you can run all the tests with the clic
 button, or ideally a single keyboard shortcut.
 
 Additionally, it can be handy to check your build on the command line. Open a terminal and change to the
-top level project directory. Then run the command `gradle build`.  You ought to see your code and tests
-compile and the eight (six of which are empty) tests run successfully. 
+top-level project directory. Then run the command `gradle build`.  You ought to see your code and tests
+compile, and the ten tests (six of which are empty) run successfully. 
