@@ -10,7 +10,7 @@ public class APreChargeDecision {
     }
 
     @Test
-    public void shouldRecordAlternativeChargeAdviceAgainstSuspects() {
+    public void shouldRecordAlternativeOffenceAdviceAgainstSuspects() {
         // TODO: Make assertions
     }
     
