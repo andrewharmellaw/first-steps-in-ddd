@@ -32,7 +32,7 @@ public class APoliceInvestigation {
     }
 
     @Test
-    public void shouldHaveAtLLeastOneSuspect() {
+    public void shouldHaveAtLeastOneSuspect() {
         assertFalse(anInvestigation.suspects.isEmpty());
     }
     
