@@ -13,7 +13,7 @@ public class APoliceInvestigation {
     }
 
     @Test
-    public void shouldHaveAtLLeastOneSuspect() {
+    public void shouldHaveAtLeastOneSuspect() {
         Suspect aSuspect = new Suspect();
         PoliceInvestigation anInvestigation = new PoliceInvestigation(aSuspect);
         assertFalse(anInvestigation.suspects.isEmpty());
