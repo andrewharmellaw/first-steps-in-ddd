@@ -1,4 +1,3 @@
-
 package com.harmellaw;
 
 import org.junit.jupiter.api.BeforeEach;
