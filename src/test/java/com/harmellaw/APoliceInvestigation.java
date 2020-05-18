@@ -24,7 +24,7 @@ public class APoliceInvestigation {
     }
 
     @Test
-    public void cantHaveAnEmptyPoliceNationalComputerId() {
+    public void cantBeCreatedWithAnEmptyPoliceNationalComputerId() {
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
             anInvestigation = new PoliceInvestigation(null, aSuspect);
         });
@@ -32,26 +32,10 @@ public class APoliceInvestigation {
     }
 
     @Test
-    public void shouldHaveAtLeastOneSuspect() {
-        assertFalse(anInvestigation.suspects.isEmpty());
-    }
-    
-    @Test
-    public void cantHaveZeroSuspects() {
+    public void cantBeCreatedWithNoSuspect() {
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
             anInvestigation = new PoliceInvestigation(aPncId, null);
         });
         assertTrue(exception.getMessage().contains("You must provide a suspect"));
     }
-    
-    @Test
-    public void shouldBeSomething() {
-        // Make assertions
-    }
-
-    @Test
-    public void shouldDoSomethingElse_whenSomethingHappens() {
-        // Make assertions
-    }
-
 }
