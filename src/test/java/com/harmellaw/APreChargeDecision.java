@@ -13,9 +13,5 @@ public class APreChargeDecision {
     public void shouldRecordAlternativeOffenceAdviceAgainstSuspects() {
         // TODO: Make assertions
     }
-    
-    @Test
-    public void shouldRecordDisclosureManagementReminders() {
-        // TODO: Make assertions
-    }
+
 }

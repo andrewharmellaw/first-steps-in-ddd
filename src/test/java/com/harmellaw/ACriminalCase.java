@@ -10,13 +10,4 @@ public class ACriminalCase {
     public void setup() {
     }
 
-    @Test
-    public void shouldDoSomething() {
-        // Make assertions
-    }
-    
-    @Test
-    public void shouldDoSomething_whenSomethingElseHappens() {
-        // Make assertions
-    }
 }
