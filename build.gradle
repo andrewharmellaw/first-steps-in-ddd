@@ -23,4 +23,6 @@ apply plugin: 'checkstyle'
 
 checkstyle {
     toolVersion = '8.32'
+    ignoreFailures=false
+    maxWarnings = 0
 }
