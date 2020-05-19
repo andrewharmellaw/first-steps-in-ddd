@@ -16,7 +16,7 @@ declared, standard `src` and `test` directory structure, and some example unit t
 (`APoliceInvestigation.java`, `APreChargeDecision.java` and `ACriminalCase.java`) and associated starter
 classes (e.g. `PoliceInvestigation.java`, `PNCId.java`, `Suspect.java`) and an Enum, `CriminalOffence.java`.
 
-## Getting up and running
+## Up and running
 The training relies entirely on your writing unit tests (ideally you use test-driven development)
 so you want to be able to run them very quickly.
 
