@@ -1,4 +1,4 @@
-# First Steps in Domain-Driven Design
+# First Steps in Domain-Driven Design ![Build](https://github.com/andrewharmellaw/first-steps-in-ddd/workflows/Build/badge.svg)
 This is the starter project for the exercises in the "First Steps in Domain-Driven Design" course.
 
 You should be able to fork and then clone this repo to get an almost empty gradle project ready to work in.
