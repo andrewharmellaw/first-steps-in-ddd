@@ -1,21 +1,23 @@
 package com.harmellaw;
 
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 public class APoliceInvestigation {
 
-    PNCId aPncId;
-    Suspect aSuspect;
+    PNCId pncId;
+    Suspect suspect;
     PoliceInvestigation anInvestigation;
 
     @BeforeEach
     public void setup() {
-        aPncId = new PNCId("1234-ESDT");
-        aSuspect = new Suspect();
-        anInvestigation = new PoliceInvestigation(aPncId, aSuspect);
+        pncId = new PNCId("1234-ESDT");
+        suspect = new Suspect();
+        anInvestigation = new PoliceInvestigation(pncId, suspect);
     }
 
     @Test
@@ -26,7 +28,7 @@ public class APoliceInvestigation {
     @Test
     public void cantBeCreatedWithAnEmptyPoliceNationalComputerId() {
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            anInvestigation = new PoliceInvestigation(null, aSuspect);
+            anInvestigation = new PoliceInvestigation(null, suspect);
         });
         assertTrue(exception.getMessage().contains("You must provide a PNC Id"));
     }
@@ -34,7 +36,7 @@ public class APoliceInvestigation {
     @Test
     public void cantBeCreatedWithNoSuspect() {
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            anInvestigation = new PoliceInvestigation(aPncId, null);
+            anInvestigation = new PoliceInvestigation(pncId, null);
         });
         assertTrue(exception.getMessage().contains("You must provide a suspect"));
     }
