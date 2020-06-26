@@ -1,0 +1,31 @@
+@startuml
+hide empty members
+hide empty methods
+
+class CriminalCase {
+}
+
+class CriminalOffence {
+}
+
+class PNCId {
+}
+
+class PoliceInvestigation {
+}
+
+class PreChargeDecision {
+}
+
+class Suspect    {
+}
+
+CriminalOffence "1" *-- "*" Suspect
+
+Suspect "1" *-- "*" PoliceInvestigation
+
+PNCId *-- "1" PoliceInvestigation
+
+
+
+@enduml
