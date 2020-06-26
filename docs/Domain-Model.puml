@@ -20,12 +20,10 @@ class PreChargeDecision {
 class Suspect    {
 }
 
-CriminalOffence "1" *-- "*" Suspect
+Suspect *-- "*" CriminalOffence
 
-Suspect "1" *-- "*" PoliceInvestigation
+PoliceInvestigation *-- "*" Suspect
 
-PNCId *-- "1" PoliceInvestigation
-
-
+PoliceInvestigation *-- "*" PNCId
 
 @enduml
