@@ -5,16 +5,18 @@ package com.harmellaw;
  */
 public enum CriminalOffence {
 
-    AFFRAY("Affray"),
-    ARMED_ROBBERY("Armed robbery"),
     DANGEROUS_DRIVING("Dangerous driving"),
     ENDANGERING_AN_AIRCRAFT("Endangering an aircraft"),
     FALSE_ACCOUNTING("False accounting"),
-    GOING_EQUIPPED_TO_STEAL("Going equipped to steal"),
-    HARBOURING_ESCAPED_PRISONER("Harbouring escaped prisoner"),
     IMPERSONATING_CUSTOMS_OFFICER("Impersonating Customs officer"),
     KEEPING_A_DISORDERLY_HOUSE("Keeping a disorderly house"),
-    MAKING_OFF_WITHOUT_PAYMENT("Making off without payment");
+    CORRUPTION_IN_PUBLIC_OFFICE("Corruption in public office"),
+    CUTTING_AWAY_BUOYS_ETC("Cutting away buoys etc"),
+    FALSE_EVIDENCE_BEFORE_EUROPEAN_COURT("False evidence before European Court"),
+    FIRING_ON_REVENUE_VESSEL("Firing on Revenue vessel"),
+    FRAUDULENT_EVASION_OF_AGRICULTURAL_LEVY("Fraudulent evasion of agricultural levy"),
+    MISHANDLING_OR_FALSIFYING_PARKING_DOCUMENTS_ETC("Mishandling or falsifying parking documents etc"),
+    OBSTRUCTING_ENGINE_OR_CARRIAGE_ON_RAILWAY("Obstructing engine or carriage on railway");
 
     private final String value;
 
