@@ -28,14 +28,14 @@ public class APoliceInvestigation {
     @Test
     public void cannotBeCreatedWithAnEmptyPoliceNationalComputerId() {
         Exception exception = assertThrows(IllegalArgumentException.class, ()
-                -> anInvestigation = new PoliceInvestigation(null, suspect));
+            -> anInvestigation = new PoliceInvestigation(null, suspect));
         assertTrue(exception.getMessage().contains("You must provide a PNC Id"));
     }
 
     @Test
     public void cannotBeCreatedWithNoSuspect() {
         Exception exception = assertThrows(IllegalArgumentException.class, ()
-                -> anInvestigation = new PoliceInvestigation(pncId, null));
+            -> anInvestigation = new PoliceInvestigation(pncId, null));
         assertTrue(exception.getMessage().contains("You must provide a suspect"));
     }
 }
