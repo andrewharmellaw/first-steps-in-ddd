@@ -16,7 +16,7 @@ public class APoliceInvestigation {
     @BeforeEach
     public void setup() {
         pncId = new PNCId("1234-ESDT");
-        suspect = new Suspect(CriminalOffence.AFFRAY);
+        suspect = new Suspect(CriminalOffence.FALSE_ACCOUNTING);
         anInvestigation = new PoliceInvestigation(pncId, suspect);
     }
 
@@ -27,17 +27,15 @@ public class APoliceInvestigation {
 
     @Test
     public void cannotBeCreatedWithAnEmptyPoliceNationalComputerId() {
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            anInvestigation = new PoliceInvestigation(null, suspect);
-        });
+        Exception exception = assertThrows(IllegalArgumentException.class, ()
+                -> anInvestigation = new PoliceInvestigation(null, suspect));
         assertTrue(exception.getMessage().contains("You must provide a PNC Id"));
     }
 
     @Test
     public void cannotBeCreatedWithNoSuspect() {
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            anInvestigation = new PoliceInvestigation(pncId, null);
-        });
+        Exception exception = assertThrows(IllegalArgumentException.class, ()
+                -> anInvestigation = new PoliceInvestigation(pncId, null));
         assertTrue(exception.getMessage().contains("You must provide a suspect"));
     }
 }
