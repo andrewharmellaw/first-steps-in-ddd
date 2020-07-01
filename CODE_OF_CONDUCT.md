@@ -35,7 +35,8 @@ We recognize that managing harassment is not the job
 of its recipients. The community organisaer and delegated individuals (*contact
 persons*) will make themselves available to address any & all complaints of
 harassment, and the relevant contact information for them will be
-made available to upon request to @andrewharmellaw, the originator of this
+made available to upon request to 
+[@andrewharmellaw](https://github.com/andrewharmellaw), the originator of this
 community.
 
 What You Can Expect
