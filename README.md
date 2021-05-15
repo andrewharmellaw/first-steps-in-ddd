@@ -30,3 +30,6 @@ top-level project directory. Then run the command `./gradlew build`.  You ought 
 compile, and all but one of the tests run successfully.
 
 The failing test is where we will start exercise one.
+
+## Get ahead of the game
+We're going to work on this code based on a [Domain Expert Statement from a Public Prosecutor](https://docs.google.com/document/d/1HpRJj1lk_M80Xvwzs5F-lZ1oACkVNeWRMG0s7BQxZzk/edit?usp=sharing).  If you want to read it in advance, that'll help you in the first workshop exercise and beyond.
